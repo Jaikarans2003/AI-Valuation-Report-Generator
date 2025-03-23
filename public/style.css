@@ -1,18 +1,18 @@
-/* Modern Professional Color Theme 
-   Primary: #2c3e50 (Dark Blue)
-   Secondary: #3498db (Bright Blue)
-   Accent: #1abc9c (Teal)
-   Text: #34495e (Dark Gray)
-   Background: #ecf0f1 (Light Gray)
-   Highlights: #e74c3c (Red)
+/* Neutral Professional Color Theme 
+   Primary: #445566 (Muted Blue-Gray)
+   Secondary: #607d8b (Blue Grey)
+   Accent: #78909c (Light Blue Grey)
+   Text: #37474f (Dark Blue Grey)
+   Background: #f5f7f9 (Light Grey)
+   Subtle Accents: #90a4ae (Pale Blue Grey)
 */
 
 /* General Styling */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(135deg, #ecf0f1 0%, #dfe6e9 100%);
-    color: #34495e;
-    padding: 20px;
+    background: #f5f7f9;
+    color: #37474f;
+    padding: 30px;
     margin: 0;
     line-height: 1.6;
     min-height: 100vh;
@@ -20,37 +20,37 @@ body {
 
 /* Main Container */
 .container {
-    max-width: 900px;
+    max-width: 950px;
     margin: auto;
     background-color: #ffffff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
     border: 1px solid rgba(0,0,0,0.05);
 }
 
 /* Headers */
 h1, h2, h3 {
-    color: #2c3e50;
-    margin-bottom: 15px;
+    color: #445566;
+    margin-bottom: 20px;
     font-weight: 600;
     text-align: center;
 }
 
 h1 {
     font-size: 28px;
-    margin-bottom: 25px;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #607d8b;
+    padding-bottom: 15px;
     position: relative;
 }
 
 h1:after {
     content: '';
     position: absolute;
-    width: 80px;
+    width: 60px;
     height: 3px;
-    background-color: #1abc9c;
+    background-color: #78909c;
     bottom: -2px;
     left: 50%;
     transform: translateX(-50%);
@@ -58,46 +58,48 @@ h1:after {
 
 h2 {
     font-size: 22px;
-    margin-top: 25px;
-    color: #3498db;
+    margin-top: 30px;
+    color: #546e7a;
+    margin-bottom: 25px;
 }
 
 h3 {
     font-size: 18px;
-    margin-top: 20px;
-    color: #1abc9c;
+    margin-top: 24px;
+    color: #607d8b;
+    margin-bottom: 20px;
 }
 
 /* Tagline */
 .tagline {
     text-align: center;
-    color: #7f8c8d;
-    margin-top: -10px;
-    margin-bottom: 30px;
+    color: #78909c;
+    margin-top: -15px;
+    margin-bottom: 35px;
     font-size: 16px;
     font-style: italic;
 }
 
 /* Form Section */
 .form-section {
-    background: linear-gradient(to bottom, #f8fafc 0%, #f1f5f9 100%);
-    padding: 25px;
-    border-radius: 10px;
-    margin-bottom: 30px;
+    background: #f8fafc;
+    padding: 35px;
+    border-radius: 8px;
+    margin-bottom: 40px;
     border: 1px solid #e2e8f0;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
 }
 
 /* Input Groups */
 .input-group {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .input-group label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-weight: 500;
-    color: #2c3e50;
+    color: #445566;
     font-size: 15px;
     transition: all 0.3s ease;
 }
@@ -106,51 +108,57 @@ h3 {
 .valuation-inputs {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 20px;
+    gap: 25px;
+    margin-top: 10px;
 }
 
 /* Paragraphs and Lists */
 p, ul, ol {
     font-size: 15px;
     line-height: 1.8;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: justify;
+}
+
+/* Report Output */
+#reportOutput {
+    margin-top: 30px;
 }
 
 /* Report Content Styling */
 #report-content {
     background: white;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     max-width: 800px;
-    margin: 30px auto;
+    margin: 40px auto;
     font-size: 15px;
     line-height: 1.6;
     position: relative;
-    border: 1px solid #e6e6e6;
+    border: 1px solid #eaeef2;
 }
 
 /* Report Page Styling */
 .report-page {
     position: relative;
-    padding: 20px;
-    margin-bottom: 50px;
+    padding: 30px;
+    margin-bottom: 60px;
     min-height: 900px; /* Ensure consistent page height */
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 /* First Page Specific Styling */
 .page-1 {
     text-align: center;
-    background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);
+    background: #ffffff;
 }
 
 .report-header-centered {
-    margin-top: 60px;
-    margin-bottom: 80px;
+    margin-top: 70px;
+    margin-bottom: 90px;
     padding: 20px;
     position: relative;
 }
@@ -159,7 +167,7 @@ p, ul, ol {
     font-size: 36px;
     border: none;
     font-weight: 700;
-    color: #2c3e50;
+    color: #445566;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -168,45 +176,40 @@ p, ul, ol {
     content: '';
     position: absolute;
     width: 120px;
-    height: 3px;
-    background: linear-gradient(to right, #3498db, #1abc9c);
+    height: 2px;
+    background: #78909c;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .report-subheader {
-    margin-bottom: 80px;
+    margin-bottom: 90px;
 }
 
 .report-subheader p {
     text-align: center;
-    margin: 5px 0;
+    margin: 8px 0;
     font-size: 16px;
-    color: #7f8c8d;
+    color: #607d8b;
 }
 
 .about-section, .company-section, .service-section {
     text-align: left;
-    margin-bottom: 40px;
-    padding: 15px;
+    margin-bottom: 50px;
+    padding: 25px;
     border-radius: 8px;
     transition: all 0.3s ease;
-    background-color: rgba(236, 240, 241, 0.3);
-}
-
-.about-section:hover, .company-section:hover, .service-section:hover {
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    transform: translateY(-2px);
+    background-color: #f9fafc;
 }
 
 .about-section h2, .company-section h2, .service-section h2 {
     text-align: left;
     font-size: 20px;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    color: #2c3e50;
+    border-bottom: 1px solid #d9e2ec;
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+    color: #445566;
     position: relative;
 }
 
@@ -215,29 +218,31 @@ p, ul, ol {
     position: absolute;
     width: 40px;
     height: 2px;
-    background-color: #1abc9c;
-    bottom: -2px;
+    background-color: #78909c;
+    bottom: -1px;
     left: 0;
 }
 
 .about-section p, .company-section p, .service-section p {
-    margin-top: 15px;
+    margin-top: 20px;
     line-height: 1.7;
+    padding: 0 5px;
 }
 
 /* Second Page Specific Styling */
 .page-2 {
-    background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
+    background: #ffffff;
+    padding-top: 10px;
 }
 
 .page-2 h1 {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 35px;
+    margin-bottom: 35px;
     font-size: 24px;
-    color: #2c3e50;
+    color: #445566;
     position: relative;
     display: inline-block;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
 }
 
 .page-2 h1:after {
@@ -245,7 +250,7 @@ p, ul, ol {
     position: absolute;
     width: 60%;
     height: 2px;
-    background-color: #3498db;
+    background-color: #78909c;
     bottom: 0;
     left: 20%;
 }
@@ -253,33 +258,27 @@ p, ul, ol {
 .methods-container {
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    margin-bottom: 30px;
+    gap: 30px;
+    margin-bottom: 40px;
 }
 
 .valuation-method {
-    background: linear-gradient(to right, #f8f9fa 0%, #ffffff 100%);
-    padding: 22px;
-    border-radius: 10px;
-    border-left: 5px solid #3498db;
-    margin-bottom: 20px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
-}
-
-.valuation-method:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    background: #f9fafc;
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 4px solid #607d8b;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 .valuation-method h2 {
     text-align: left;
-    color: #2c3e50;
+    color: #445566;
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-size: 18px;
     border-bottom: 1px solid #e2e8f0;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     position: relative;
 }
 
@@ -288,106 +287,107 @@ p, ul, ol {
     position: absolute;
     width: 30px;
     height: 2px;
-    background-color: #1abc9c;
+    background-color: #78909c;
     bottom: -1px;
     left: 0;
 }
 
 .method-description {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    padding: 0 5px;
 }
 
 .method-description p {
-    margin: 8px 0;
+    margin: 10px 0;
     line-height: 1.6;
     font-size: 14px;
-    color: #34495e;
+    color: #37474f;
 }
 
 .method-value {
     font-weight: 600;
-    color: #1abc9c;
-    margin-bottom: 12px;
-    padding: 5px 0;
+    color: #546e7a;
+    margin-bottom: 15px;
+    padding: 8px 0;
     font-size: 15px;
-    background-color: rgba(26, 188, 156, 0.05);
+    background-color: rgba(96, 125, 139, 0.05);
     border-radius: 4px;
-    padding: 8px 12px;
+    padding: 10px 15px;
     display: inline-block;
 }
 
 .recommendation {
-    margin-top: 12px;
+    margin-top: 15px;
     font-weight: 500;
-    color: #3498db;
-    padding: 10px 0;
-    border-top: 1px dashed #e2e8f0;
+    color: #607d8b;
+    padding: 12px 0 0 0;
+    border-top: 1px solid #e2e8f0;
     font-size: 14px;
     position: relative;
-    padding-left: 22px;
+    padding-left: 25px;
 }
 
 .recommendation:before {
     content: '👉';
     position: absolute;
     left: 0;
-    top: 10px;
+    top: 12px;
 }
 
 /* Third Page Specific Styling */
 .page-3 {
-    padding-top: 30px;
-    background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
+    padding-top: 40px;
+    background: #ffffff;
 }
 
 .page-3 h1 {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 35px;
+    margin-bottom: 35px;
     font-size: 24px;
 }
 
 /* For the standalone method on page 3 */
 .page-3 .valuation-method {
-    padding: 25px;
-    margin: 30px 0;
-    background: linear-gradient(to right, #f8f9fa 0%, #ffffff 100%);
-    border-left: 5px solid #3498db;
+    padding: 30px;
+    margin: 40px 0;
+    background: #f9fafc;
+    border-left: 4px solid #607d8b;
 }
 
 .page-3 .method-description p {
     line-height: 1.6;
     font-size: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .page-3 .valuation-method h2 {
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .page-3 .method-value {
     font-size: 15px;
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
 .page-3 .recommendation {
     font-size: 15px;
-    color: #3498db;
+    color: #607d8b;
 }
 
 /* Fourth Page Specific Styling */
 .page-4 {
-    padding-top: 30px;
-    background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
+    padding-top: 40px;
+    background: #ffffff;
 }
 
 .page-4 h1 {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 35px;
+    margin-bottom: 35px;
     font-size: 24px;
     position: relative;
     display: inline-block;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
 }
 
 .page-4 h1:after {
@@ -395,76 +395,77 @@ p, ul, ol {
     position: absolute;
     width: 60%;
     height: 2px;
-    background-color: #3498db;
+    background-color: #78909c;
     bottom: 0;
     left: 20%;
 }
 
 .conclusion-section {
-    padding: 25px;
-    background-color: rgba(236, 240, 241, 0.3);
-    border-radius: 10px;
+    padding: 30px;
+    background-color: #f9fafc;
+    border-radius: 8px;
 }
 
 .conclusion-section p {
-    margin: 15px 0;
+    margin: 20px 0;
     line-height: 1.7;
     font-size: 15px;
 }
 
 .conclusion-section strong {
-    color: #2c3e50;
+    color: #445566;
     font-weight: 600;
 }
 
 .conclusion-section ol {
-    padding-left: 25px;
-    margin: 20px 0;
+    padding-left: 30px;
+    margin: 25px 0;
 }
 
 .conclusion-section li {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     line-height: 1.6;
     position: relative;
     padding-left: 5px;
 }
 
 .conclusion-section li::marker {
-    color: #3498db;
+    color: #607d8b;
     font-weight: bold;
 }
 
 .footer-section {
-    margin-top: 40px;
-    padding-top: 20px;
+    margin-top: 50px;
+    padding-top: 25px;
     border-top: 1px solid #e2e8f0;
 }
 
 .footer-section h2 {
     font-size: 18px;
-    color: #2c3e50;
+    color: #445566;
     text-align: left;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
     border-bottom: 1px solid #e2e8f0;
 }
 
 .footer-section p {
     font-size: 14px;
     line-height: 1.6;
-    color: #7f8c8d;
+    color: #78909c;
+    padding: 0 5px;
 }
 
 hr {
     border: 0;
     height: 1px;
-    background: linear-gradient(to right, transparent, #e2e8f0, transparent);
-    margin: 30px 0;
+    background: #e2e8f0;
+    margin: 35px 0;
 }
 
 .page-break {
     height: 30px;
-    margin: 20px 0;
+    margin: 30px 0;
     border-top: 1px dashed #e2e8f0;
     position: relative;
 }
@@ -478,72 +479,77 @@ hr {
     background: white;
     padding: 0 10px;
     font-size: 14px;
-    color: #95a5a6;
+    color: #90a4ae;
 }
 
 /* Form Controls Styling */
 input, textarea {
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     border: 1px solid #e2e8f0;
     border-radius: 6px;
     font-size: 15px;
-    color: #2c3e50;
+    color: #37474f;
     transition: all 0.3s ease;
     background-color: white;
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.03);
+    margin-bottom: 5px;
 }
 
 input:focus, textarea:focus {
     outline: none;
-    border-color: #3498db;
-    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    border-color: #607d8b;
+    box-shadow: 0 0 0 3px rgba(96, 125, 139, 0.1);
 }
 
 textarea {
-    min-height: 120px;
+    min-height: 150px;
     resize: vertical;
 }
 
 button {
-    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    background: #607d8b;
     color: white;
     border: none;
-    padding: 12px 25px;
+    padding: 14px 28px;
     border-radius: 6px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
     display: block;
-    margin: 20px auto;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 30px auto;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
 }
 
 button:hover {
-    background: linear-gradient(135deg, #2980b9 0%, #2c3e50 100%);
+    background: #546e7a;
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
 }
 
 button:disabled {
-    background: #95a5a6;
+    background: #b0bec5;
     cursor: not-allowed;
 }
 
 #downloadPdfBtn {
-    background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);
-    margin-top: 20px;
+    background: #78909c;
+    margin-top: 30px;
 }
 
 #downloadPdfBtn:hover {
-    background: linear-gradient(135deg, #16a085 0%, #148f77 100%);
+    background: #607d8b;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
     .container {
-        padding: 20px;
+        padding: 25px;
         margin: 10px;
     }
     
@@ -560,12 +566,24 @@ button:disabled {
     }
     
     .report-page {
-        padding: 15px;
+        padding: 20px;
         min-height: auto;
     }
     
     .report-header-centered h1 {
         font-size: 28px;
+    }
+    
+    .form-section {
+        padding: 25px;
+    }
+    
+    #report-content {
+        padding: 30px;
+    }
+    
+    .valuation-method {
+        padding: 20px;
     }
 }
 
