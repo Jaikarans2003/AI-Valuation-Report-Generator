@@ -94,7 +94,7 @@ This valuation report is a foundation for strategic decision-making, whether for
 ## Prepared by
 
 Jaikaran S
-Email: jaikaran.s@example.com
+Email: jaikaran..pesce@gmail.com
 
 ## Disclaimer
 
@@ -225,7 +225,7 @@ This valuation report is a foundation for strategic decision-making, whether for
 ## Prepared by
 
 Jaikaran S
-Email: jaikaran.s@example.com
+Email: jaikaran.pesce@gmail.com
 
 ## Disclaimer
 
